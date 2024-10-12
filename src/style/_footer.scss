@@ -1,0 +1,60 @@
+.footer-ul {
+    display: flex;
+    height: 350px;
+    flex-wrap: wrap; // Allow wrapping for responsiveness
+  
+    ul {
+      margin: 50px 50px; 
+    }
+  
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    img {
+      margin: 50px 50px;
+      width: 200px;
+      height: 60px;
+    }
+  }
+  
+  /* Responsive Design for Tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    .footer-ul {
+        display: block;
+      flex-direction: column; // Stack elements vertically on smaller screens
+      align-items: center; // Center align items
+      height: auto; // Allow height to adjust based on content
+  
+      ul {
+        margin: 20px 0; // Reduce margin for better spacing
+      }
+  
+      img {
+        width: 150px; // Adjust image size for tablets
+        height: 50px; // Maintain aspect ratio
+        margin: 20px 0; // Reduce margins for better spacing
+      }
+    }
+  }
+  
+  /* Responsive Design for Mobile (max-width: 467px) */
+  @media (max-width: 467px) {
+    .footer-ul {
+        display: block;
+      align-items: center; // Center align items
+      height: auto; // Allow height to adjust based on content
+  
+      ul {
+        margin: 10px 0; // Further reduce margin for mobile
+      }
+  
+      img {
+        width: 120px; // Adjust image size for mobile
+        height: 40px; // Maintain aspect ratio
+        margin: 10px 0; // Reduce margins for better spacing
+      }
+    }
+  }
+  

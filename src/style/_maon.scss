@@ -1,0 +1,155 @@
+/* Main section styling */
+#main {
+  padding: 60px 0;
+}
+
+.main-div {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Text content styles */
+.text-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-size: 50px;
+  min-height: 0;
+  color: #04a2ba;
+  font-family: Unbounded, sans-serif;
+  font-weight: 500;
+}
+
+.text-content p {
+  font-size: 18px;
+  color: #555;
+  width: 400px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Contact button styles */
+.main-button {
+  background-color: #007bff; /* Primary blue color */
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  font-family: Unbounded;
+}
+
+.main-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Image container */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive design */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .main-div {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align text content */
+  }
+
+  .text-content h1 {
+    font-size: 32px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .main-button {
+    padding: 10px 25px;
+    font-size: 15px;
+    margin-top: 100px; /* Reduce margin for smaller screens */
+  }
+
+  .main-img {
+    max-width: 90%; /* Reduce image size slightly */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .main-div {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 28px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .main-button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 50px; /* Adjust margin for mobile */
+  }
+
+  .main-img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Extra small mobile screens (max-width: 467px) */
+@media (max-width: 467px) {
+  .main-div {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 24px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    width: 100%; /* Take full width for small screens */
+  }
+
+  .main-button {
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .main-img {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+}

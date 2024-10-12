@@ -1,0 +1,43 @@
+.slider-text {
+  font-size: 35px;
+  color: #000929b3;
+  font-family: "Unbounded";
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.slider-img {
+  margin-left: 100px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .slider-text {
+    font-size: 28px; /* Smaller font size for tablets */
+    margin-left: 15px; /* Reduce left margin for better fit */
+    margin-bottom: 20px; /* Adjust bottom margin */
+  }
+
+  .slider-img {
+    margin-left: 50px; /* Reduce left margin for smaller screens */
+  }
+}
+
+/* Small mobile screens (max-width: 467px) */
+@media (max-width: 467px) {
+  .slider-text {
+    font-size: 22px; /* Further reduce font size for small devices */
+    margin-left: 10px; /* Smaller margin for mobile screens */
+    margin-bottom: 15px; /* Adjust bottom margin */
+    text-align: center; /* Center align text for smaller screens */
+  }
+
+  .slider-img {
+    margin-left: 0; /* Remove left margin on small screens */
+    margin-top: 20px; /* Add top margin to separate image from text */
+    width: 100%; /* Ensure the image scales to full width */
+    max-width: 90%; /* Limit the width to maintain proportions */
+  }
+}

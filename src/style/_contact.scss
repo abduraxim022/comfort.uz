@@ -1,0 +1,166 @@
+.contact-info {
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background: radial-gradient(
+    333.17% 80.94% at 51.32% 69.21%,
+    #04a2ba 0%,
+    rgb(2, 227, 216) 100%
+  );
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.contact-img {
+  background-image: url("../images/carpet2.png");
+  width: 515px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  height: 400px;
+  right: -45px;
+}
+
+.form-div {
+  margin-left: 150px;
+
+  input {
+    width: 416px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: black;
+    background: rgba(128, 128, 128, 0.199);
+    margin-left: 18px;
+    padding-left: 15px;
+  }
+  
+  h2 {
+    color: #242825;
+    font-family: Unbounded;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  button {
+    width: 416px;
+    height: 50px;
+    background-color: #242825;
+    color: white;
+    font-family: Unbounded;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 18px;
+    margin-top: 60px;
+  }
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+.form-container {
+  border-radius: 7px;
+  background: white;
+  width: 450px;
+  height: 400px;
+}
+
+/* Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .contact-img {
+    display: none;
+    width: 300px;
+    height: 250px;
+    right: 0;
+    position: static; /* Set to static for better alignment on smaller screens */
+    margin: 20px auto;
+  }
+
+  .form-div {
+    margin-left: 0;
+    input {
+      width: 100%; /* Full width for input fields */
+      margin-left: 0;
+    }
+    
+    button {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  .form-container {
+    width: 100%; /* Full width for form container */
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* Responsive Design for Mobile (max-width: 467px) */
+@media (max-width: 467px) {
+  .contact-info {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .contact-img {
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+  }
+
+  .form-div {
+    margin-left: 0;
+    input {
+      width: 100%; /* Full width input */
+      margin-left: 0;
+    }
+    
+    button {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 15px;
+  }
+}
