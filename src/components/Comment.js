@@ -1,98 +1,123 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import { useTranslation } from "react-i18next";
-import "swiper/css";
-import "swiper/css/pagination";
+  import React from "react";
+  import Slider from "react-slick";
+  import "slick-carousel/slick/slick.css"; 
+  import "slick-carousel/slick/slick-theme.css";
+  import nigora from '../images/nigora.jpg'
+  import muxlisa from '../images/muhlisa.webp'
+  import lobar from '../images/lobar.jpg'
+  import barno from '../images/barno.jpg'
+  import bonu from '../images/bonu.jpg'
+  import samiya from '../images/samiya.jpg'
+  import { useTranslation } from "react-i18next";
 
-export default function Comment() {
-  const { t } = useTranslation();
+  export default function Comment() {
+    const { t } = useTranslation();
 
-  // Swiper settings function
-  const getSwiperSettings = () => {
-    return {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true, // Infinite loop
-      autoplay: {
-        delay: 3000, // Autoplay delay (3 seconds)
-        disableOnInteraction: false, // Continue autoplay after interaction
-      },
-      pagination: {
-        clickable: true, // Clickable pagination dots
-      },
-      breakpoints: {
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 0,// 3 slides on large screens
-        },
-        900: {
-          slidesPerView: 2, // 2 slides on tablet
-        },
-        467: {
-          slidesPerView: 1,
-           spaceBetween: 0, // 1 slide on mobile
-        },
-      },
-      modules: [Pagination, Autoplay], // Swiper modules
-      className: "mySwiper", // Custom class for styling
+    // Slick slider settings function
+    const getSliderSettings = () => {
+      return {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 467,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      };
     };
-  };
 
-  return (
-    <div id="comment" className="comment-section">
-      <div className="container">
-        <h1>
-          {t("comments_title", "Fikrlar")}
-        </h1>
-
-        <div className="swiper-wrapper">
-          <Swiper className="swiper" {...getSwiperSettings()}>
-            <SwiperSlide>
+    return (
+      <div id="comment" className="comment-section">
+        <div className="container">
+          <h1>{t("comments_title", "Fikrlar")}</h1>
+          <div className="slick-slider-wrapper">
+            <Slider {...getSliderSettings()}>
               <div className="testimonial-card">
+                <div className="comment-image_container">
+              <img width={"100px"} height={"100px"} src={nigora}/>
+              <div>
                 <h2>Nigora</h2>
                 <p>{t("telegram_username", { username: "@nigora_dostva" })}</p>
+              </div>
+                </div>
                 <p>{t("nigora_feedback")}</p>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
               <div className="testimonial-card">
-                <h2>Muxlisa</h2>
-                <p>{t("telegram_username", { username: "@prsens" })}</p>
+              <div className="comment-image_container">
+                <img width={"100px"} height={"100px"} src={muxlisa} alt="Muxlisa" />
+                <div>
+                  <h2>Muxlisa</h2>
+                  <span>{t("telegram_username", { username: "@prsens" })}</span>
+                </div>
+              </div>
                 <p>{t("muxlisa_feedback")}</p>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
               <div className="testimonial-card">
-                <h2>Lobar</h2>
-                <p>{t("telegram_username", { username: "@hyot" })}</p>
+              <div className="comment-image_container">
+                <img width={"100px"} height={"100px"} src={lobar} alt="Lobar" />
+                <div>
+                  <h2>Lobar</h2>
+                  <span>{t("telegram_username", { username: "@prsens" })}</span>
+                </div>
+              </div>
                 <p>{t("lobar_feedback")}</p>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
               <div className="testimonial-card">
-                <h2>Barno</h2>
-                <p>{t("telegram_username", { username: "@barno" })}</p>
+              <div className="comment-image_container">
+                <img width={"100px"} height={"100px"} src={barno} alt="Barno" />
+                <div>
+                  <h2>Barno</h2>
+                  <span>{t("telegram_username", { username: "@prsens" })}</span>
+                </div>
+              </div>
                 <p>{t("barno_feedback")}</p>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
               <div className="testimonial-card">
-                <h2>Bonu</h2>
-                <p>{t("telegram_username", { username: "@bonu_hamidova" })}</p>
+              <div className="comment-image_container">
+                <img width={"100px"} height={"100px"} src={bonu} alt="Bonu" />
+                <div>
+                  <h2>Bonu</h2>
+                  <p>{t("telegram_username", { username: "@prsens" })}</p>
+                </div>
+              </div>
                 <p>{t("bonu_feedback")}</p>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
               <div className="testimonial-card">
-                <h2>Samiya</h2>
-                <p>{t("telegram_username", { username: "@samiya_smm" })}</p>
+              <div className="comment-image_container">
+                <img width={"100px"} height={"100px"} src={samiya} alt="Samiya" />
+                <div>
+                  <h2>Samiya</h2>
+                  <span>{t("telegram_username", { username: "@prsens" })}</span>
+                </div>
+              </div>
                 <p>{t("samiya_feedback")}</p>
               </div>
-            </SwiperSlide>
-          </Swiper>
+            </Slider>
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }

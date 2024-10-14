@@ -15,22 +15,41 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* Swiper wrapper */
 .swiper-wrapper {
   display: flex;
   justify-content: center;
 }
 
-/* Testimonial Card Styling */
 .testimonial-card {
   width: 377px;
   height: 256px;
   background-color: white;
-  border: 1px solid #04A2BA;
-  border-radius: 10px;
+  border: 0.5px solid #04A2BA;
+  border-radius: 20px;
+  
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+
+  
+
+  .comment-image_container{
+    display: flex;
+    img{
+      border-radius: 50%;
+    }
+    span{
+      margin-left: 15px;
+    }
+
+    h2{
+      margin-left: 15px;
+    }
+  }
+
+  p{
+    margin-top: 15px;
+  }
+  
 }
 
 .testimonial-card h2 {
@@ -46,12 +65,23 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* Add some padding to the Swiper container */
-.mySwiper {
-  padding: 20px;
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-/* Pagination styling */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .swiper-pagination-bullet {
   background: #00796b !important;
 }
@@ -60,7 +90,6 @@ h1 {
   background: #004d40 !important;
 }
 
-/* Responsive Design for Tablet (max-width: 768px) */
 @media (max-width: 768px) {
   .testimonial-card {
     padding: 15px;
@@ -82,13 +111,13 @@ h1 {
     font-size: 14px;
   }
 
-  /* Swiper settings: One slide per view on tablet */
+ 
   .swiper-slide {
-    width: 100% !important; /* Ensure the Swiper slide takes up full width */
+    width: 100% !important; 
   }
 }
 
-/* Responsive Design for Mobile (max-width: 467px) */
+
 @media (max-width: 467px) {
   .testimonial-card {
     

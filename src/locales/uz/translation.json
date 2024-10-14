@@ -63,5 +63,7 @@
   "pickupDeliveryAnswer": "Ha, biz gilamlaringizni o‘zingiz uchun qulay bo‘lgan vaqtda bepul olib ketamiz va yetkazib beramiz. Siz faqat yuvish xizmatiga to‘lov qilasiz.",
   "washAnyCarpet": "Har qanday gilamni yuvish mumkinmi?",
   "washAnyCarpetAnswer": "Biz ko‘plab gilam turlarini yuvamiz, jumladan, jun, ipak va sintetik gilamlar. Ammo juda nozik yoki qadimiy gilamlar uchun biz maxsus tozalash usullarini qo‘llaymiz yoki sizga alternativ tozalash usullarini tavsiya qilamiz.",
-  "location": "O'zbekiston, Toshkent Shahri"
+  "location": "O'zbekiston, Toshkent Shahri",
+  "description":"Biz Toshkentda 10 yildan beri professional gilam yuvish ishlarini olib boramiz, shuning uchun gilamlarni qanday toza va sifatli yuvishni bilamiz.",
+  "service":"Gilam yuvish xizmati"
 }

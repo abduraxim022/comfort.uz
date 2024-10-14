@@ -42,6 +42,7 @@ export default function Navbar() {
               <a href="#faq" className="nav-link" onClick={handleLinkClick}>{t('faq')}</a>
             </div>
           </div>
+          
 
           {/* Language selector and contact button */}
           <div className="navbar-right">
@@ -54,11 +55,12 @@ export default function Navbar() {
               <Option value="ru">Русский</Option>
               <Option value="en">English</Option>
             </Select>
-
-            {/* Hamburger menu for mobile */}
-            <div className="menu-icon" onClick={toggleMenu}>
+               {/* Hamburger menu for mobile */}
+               <div className="menu-icon" onClick={toggleMenu}>
               &#9776;
             </div>
+
+         
 
             <a className="contact1" href="#contact1">
               <button className="contact-button">{t('contact')}</button>

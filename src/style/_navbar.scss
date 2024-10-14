@@ -39,9 +39,8 @@
   cursor: pointer;
 }
 
-.links-nav{
-  width: 800px;
-  padding-left: 100px;
+.links-nav {
+  width: 800px; /* Adjusted width for navbar links */
 }
 
 /* Navbar links styling */
@@ -54,7 +53,7 @@
   font-size: 20px;
   font-weight: 500;
   color: #00000098;
-  
+  margin-left: 100px;
 }
 
 .nav-link {
@@ -109,15 +108,14 @@
 
 /* Mobile screens */
 @media (max-width: 768px) {
-
-  .container1{
+  .container1 {
     width: 100%;
   }
 
-  .nb{
+  .nb {
     width: 100%;
   }
-  
+
   .navbar-links {
     display: none; /* Hide navbar links initially */
     flex-direction: column;
@@ -134,9 +132,8 @@
 
   .navbar-links.open {
     display: flex; /* Show the dropdown menu */
-    background-color: #0056b3;
-    height: auto;
-    
+    background-color: #e8eaec;
+    height: auto; /* Auto height for flexible content */
   }
 
   .nav-link {
@@ -149,20 +146,80 @@
   }
 
   .navbar-right {
-  margin-top: 10px;
-   margin-right: 30px;
-   width: 100%;
-   gap: 35px;
+    margin-top: 10px;
+    margin-right: 30px;
+    width: 100%;
+    gap: 35px;
   }
 
   .contact-button {
     width: 100%; /* Full width for mobile */
-    display: none;
+    display: none; /* Hidden for mobile, shown only on larger screens */
   }
 
   .navbar-right .ant-select {
     width: 100%;
     margin-top: 10px;
+  }
+}
+
+/* iPhone XR styles */
+@media (max-width: 828px) {
+
+  .container{
+
+  
+  .navbar-links {
+    padding: 10px 0;
+    
+     /* Add padding for links on iPhone XR */
+  }
+
+  .nav-link {
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+
+  .contact-button {
+    padding: 8px 16px; /* Smaller button padding */
+    font-size: 14px; /* Smaller button font size */
+  }
+}
+}
+
+/* Small mobile screens (max-width: 467px) */
+@media (max-width: 467px) {
+  .navbar-links {
+    display: none; /* Hide links initially */
+    flex-direction: column;
+    gap: 5px; /* Smaller gap */
+  }
+
+  .navbar-links.open {
+    display: flex; /* Show links when dropdown is open */
+    background-color: #e8eaec; /* Background color for open state */
+  }
+
+  .nav-link {
+    font-size: 16px; /* Font size adjustment */
+    padding: 10px 0; /* Adjust padding for links */
+  }
+
+  .menu-icon {
+    font-size: 24px; /* Smaller hamburger icon */
+  }
+
+  .navbar-right {
+    margin-top: 5px; /* Reduced top margin */
+    gap: 15px; /* Adjust gap between items */
+  }
+
+  .contact-button {
+    width: 100%; /* Full width for mobile */
+    display: none; /* Hidden for mobile, shown only on larger screens */
+  }
+
+  .navbar-right .ant-select {
+    width: 100%; /* Full width select */
   }
 }
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 export default function Contact() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -28,12 +29,11 @@ export default function Contact() {
     } else {
       setErrors({});
 
-      // Telegram bot information
-      const botToken = "8056479648:AAHNr3hOpOHVWyDPm5zgc4V5T0obDqYNjKU"; // Replace with your bot token
-      const chatId = "5126374949"; // Replace with your chat ID
+      // Access the bot token and chat ID from environment variables
+      const botToken = process.env.REACT_APP_TELEGRAM_BOT_TOKEN; // Bot token from .env
+      const chatId = process.env.REACT_APP_TELEGRAM_CHAT_ID; // Chat ID from .env
       const message = `Ismingiz: ${name}%0ATelefon raqamingiz: ${phone}`;
       const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`;
-
       try {
         const response = await fetch(url);
         if (response.ok) {
@@ -57,16 +57,14 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact1" className="container ">
+    <div id="contact1" className="container">
       <div className="contact-info">
-        <div className="contact-img">
-
-        </div>
+        <div className="contact-img"></div>
         <div data-aos="fade-right" className="form-div">
           <form onSubmit={handleSubmit} className="form-container">
             <h2>Ma'lumotlaringizni qoldiring</h2>
 
-            <div  className="form-group">
+            <div className="form-group">
               <input 
                 placeholder="Ismingiz"
                 type="text"

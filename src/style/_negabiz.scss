@@ -3,7 +3,6 @@
   justify-content: space-between;
   display: flex;
   margin-top: 40px;
-
   div {
     border-radius: 8px;
     padding: 14px;
@@ -38,12 +37,13 @@
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  
 }
 
 .line {
-  border: 0.5px solid;
-  width: 100%;
-  margin-top: 20px;
+    border: 1px solid;
+    font-size: 0.5px;
+    
 }
 
 .about-backimg {
@@ -101,14 +101,14 @@
   .cards {
     flex-direction: column; /* Change to column layout */
     width: 100%; /* Full width for smaller screens */
-    align-items: center; /* Center items horizontally */
+     /* Center items horizontally */
   }
 
   .cards div {
-    width: 410px;
+    
     border: 1px solid #18f1b0b7;
     width: 100%; /* Each card takes full width */
-    max-width: 400px; /* Maintain a max width for the cards */
+    max-width: 768px; /* Maintain a max width for the cards */
     margin-bottom: 20px; /* Add spacing between cards */
   }
 

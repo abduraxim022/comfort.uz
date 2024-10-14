@@ -13,12 +13,15 @@
   align-items: center;
   gap: 40px;
   flex-wrap: wrap; /* Allow wrapping on small screens */
+  position: relative; /* Added for absolute positioning of text */
 }
 
 /* Text content styles */
 .text-content {
   flex: 1;
   max-width: 500px;
+  position: relative; /* Allow positioning of text above background */
+  z-index: 2; /* Ensure text is above the background */
 }
 
 .text-content h1 {
@@ -62,6 +65,7 @@
   justify-content: center;
 }
 
+/* Main image */
 .main-img {
   max-width: 100%;
   width: 100%;
@@ -70,86 +74,52 @@
 }
 
 /* Responsive design */
-
-/* Tablet screens */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .main-div {
     flex-direction: column; /* Stack items vertically */
     text-align: center; /* Center align text content */
+    background-image: url("../images/manwithcarpet.png"); /* Set the background image */
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    height: 400px; /* Set a height for the background */
   }
 
-  .text-content h1 {
-    font-size: 32px;
-  }
-
-  .text-content p {
-    font-size: 16px;
-  }
-
-  .main-button {
-    padding: 10px 25px;
-    font-size: 15px;
-    margin-top: 100px; /* Reduce margin for smaller screens */
-  }
-
-  .main-img {
-    max-width: 90%; /* Reduce image size slightly */
-  }
-}
-
-/* Mobile screens */
-@media (max-width: 768px) {
-  .main-div {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .text-content h1 {
-    font-size: 28px;
-  }
-
-  .text-content p {
-    font-size: 16px;
+  .text-content {
+    position: absolute; /* Absolute position to overlay on background */
+    top: 20%; /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    z-index: 2; /* Ensure text is above background */
   }
 
   .main-button {
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 50px; /* Adjust margin for mobile */
+    margin-top: 20px; /* Adjust margin for button */
   }
 
   .main-img {
-    max-width: 100%;
-    margin-top: 20px;
+    display: none; /* Hide the main image */
   }
 }
 
 /* Extra small mobile screens (max-width: 467px) */
 @media (max-width: 467px) {
   .main-div {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
+    height: 300px; /* Adjust height for smaller screens */
   }
 
-  .text-content h1 {
-    font-size: 24px;
+  .text-content{
+    h1{
+    
+      padding-bottom: -35px;
+      font-size: 30px;
+      color: #ffffff;
+    }
   }
-
-  .text-content p {
-    font-size: 14px;
-    width: 100%; /* Take full width for small screens */
+  .main-mini_img{
+    display: none;
   }
-
-  .main-button {
-    padding: 8px;
-    font-size: 14px;
-    margin-top: 30px;
-  }
-
-  .main-img {
-    max-width: 100%;
-    margin-top: 15px;
+  
+  .text-content {
+    top: 15%; /* Adjust position for smaller screens */
   }
 }

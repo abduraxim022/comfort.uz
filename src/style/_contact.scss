@@ -81,7 +81,7 @@
   height: 400px;
 }
 
-/* Responsive Design for Tablets (max-width: 768px) */
+
 @media (max-width: 768px) {
   .contact-info {
     flex-direction: column;
@@ -90,19 +90,24 @@
     margin-top: 30px;
   }
 
+  .Toastify__toast {
+    max-width: 90%; /* Set to 90% of the viewport width */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
   .contact-img {
     display: none;
     width: 300px;
     height: 250px;
     right: 0;
-    position: static; /* Set to static for better alignment on smaller screens */
+    position: static; 
     margin: 20px auto;
   }
 
   .form-div {
     margin-left: 0;
     input {
-      width: 100%; /* Full width for input fields */
+      width: 100%; 
       margin-left: 0;
     }
     
@@ -119,7 +124,7 @@
   }
 
   .form-container {
-    width: 100%; /* Full width for form container */
+    width: 100%; 
     height: auto;
     padding: 20px;
   }
@@ -133,6 +138,11 @@
     flex-direction: column;
   }
 
+  .Toastify__toast {
+    max-width: 100%; /* Make toast full-width */
+    font-size: 12px; /* Further reduce font size */
+  }
+
   .contact-img {
     display: none;
     width: 200px;
@@ -143,7 +153,7 @@
   .form-div {
     margin-left: 0;
     input {
-      width: 100%; /* Full width input */
+      width: 100%; 
       margin-left: 0;
     }
     
@@ -164,3 +174,10 @@
     padding: 15px;
   }
 }
+
+
+/* Base styles for toast notifications */
+.Toastify__toast {
+  max-width: 400px; /* Set a default max width */
+}
+
