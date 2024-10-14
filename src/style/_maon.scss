@@ -27,14 +27,14 @@
 .text-content h1 {
   font-size: 50px;
   min-height: 0;
-  color: #04a2ba;
+  color: #007bff;
   font-family: Unbounded, sans-serif;
   font-weight: 500;
 }
 
 .text-content p {
   font-size: 18px;
-  color: #555;
+  color: #007bff;
   width: 400px;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -82,14 +82,25 @@
     background-size: cover; /* Cover the entire div */
     background-position: center; /* Center the image */
     height: 400px; /* Set a height for the background */
+    border-radius: 10px;
+    
   }
 
   .text-content {
     position: absolute; /* Absolute position to overlay on background */
-    top: 20%; /* Adjust vertical position */
-    left: 50%;
+    top: 10px; /* Adjust vertical position */
+    left:37%;
     transform: translateX(-50%); /* Center the text horizontally */
     z-index: 2; /* Ensure text is above background */
+    text-align: left;
+    word-break: break-all;
+    h1{
+      color: #ffffff;
+
+    }
+    p{
+      color: #ffffff;
+    }
   }
 
   .main-button {
@@ -99,21 +110,40 @@
   .main-img {
     display: none; /* Hide the main image */
   }
+  .main-mini_img{
+  display: none;
+  }
 }
 
 /* Extra small mobile screens (max-width: 467px) */
 @media (max-width: 467px) {
   .main-div {
     height: 300px; /* Adjust height for smaller screens */
+ 
   }
 
   .text-content{
     h1{
-    
-      padding-bottom: -35px;
+      margin: -30px 0px 0px -20px;
       font-size: 30px;
       color: #ffffff;
+      font-size: 30px;
     }
+    p{
+      width: 400px;
+      height: 83px;
+      text-align: left;
+      word-break: break-word;
+      font-size: 16px;
+    }
+
+    button{
+    position: absolute;
+    left: 0;
+    margin-top: 35px;
+      
+    }
+
   }
   .main-mini_img{
     display: none;

@@ -31,3 +31,9 @@
 li{
   list-style-type: none;
 }
+
+@media (max-width:467px){
+  .container{
+    margin:0 auto;
+  }
+}

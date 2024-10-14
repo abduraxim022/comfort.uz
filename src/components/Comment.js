@@ -10,6 +10,7 @@
   import samiya from '../images/samiya.jpg'
   import { useTranslation } from "react-i18next";
 
+
   export default function Comment() {
     const { t } = useTranslation();
 
@@ -100,7 +101,7 @@
                 <img width={"100px"} height={"100px"} src={bonu} alt="Bonu" />
                 <div>
                   <h2>Bonu</h2>
-                  <p>{t("telegram_username", { username: "@prsens" })}</p>
+                  <span>{t("telegram_username", { username: "@prsens" })}</span>
                 </div>
               </div>
                 <p>{t("bonu_feedback")}</p>
