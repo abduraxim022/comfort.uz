@@ -9,6 +9,35 @@ import { useTranslation } from 'react-i18next';
 export default function Xizmatturlari() {
   const { t } = useTranslation();
 
+  // Services object to store information about each service
+  const services = [
+    {
+      imgSrc: clean,
+      altText: 'clean.png',
+      title: t('we_clean_more'),
+    },
+    {
+      imgSrc: dazmol,
+      altText: 'dazmol.png',
+      title: t('all_furniture'),
+    },
+    {
+      imgSrc: parda,
+      altText: 'parda.png',
+      title: t('all_curtains'),
+    },
+    {
+      imgSrc: gilam,
+      altText: 'gilam.png',
+      title: t('all_carpets'),
+    },
+    {
+      imgSrc: adyol,
+      altText: 'adyol.png',
+      title: t('all_blankets'),
+    },
+  ];
+
   return (
     <div id='service'>
       <div className='container'>
@@ -16,42 +45,16 @@ export default function Xizmatturlari() {
           <div data-aos="flip-up">
             <h1>{t('service_types')}</h1>
           </div>
-          <div data-aos="fade-right" className='xizmat-cards'>
-            <div>
-              <img src={clean} alt='clean.png' />
-              <h3>{t('we_clean_more')}</h3>
-              <a href='#contact1'>
-                <button className='xizmat-btn'>{t('contact')}</button>
-              </a>
-            </div>
-            <div>
-              <img src={dazmol} alt='dazmol.png' />
-              <h3>{t('all_furniture')}</h3>
-              <a href='#contact1'>
-                <button className='xizmat-btn'>{t('contact')}</button>
-              </a>
-            </div>
-            <div>
-              <img src={parda} alt='parda.png' />
-              <h3>{t('all_curtains')}</h3>
-              <a href='#contact1'>
-                <button className='xizmat-btn'>{t('contact')}</button>
-              </a>
-            </div>
-            <div>
-              <img src={gilam} alt='gilam.png' />
-              <h3>{t('all_carpets')}</h3>
-              <a href='#contact1'>
-                <button className='xizmat-btn'>{t('contact')}</button>
-              </a>
-            </div>
-            <div>
-              <img src={adyol} alt='adyol.png' />
-              <h3>{t('all_blankets')}</h3>
-              <a href='#contact1'>
-                <button className='xizmat-btn'>{t('contact')}</button>
-              </a>
-            </div>
+          <div  className='xizmat-cards'>
+            {services.map((service, index) => (
+              <div data-aos="fade-right" key={index}>
+                <img src={service.imgSrc} alt={service.altText} />
+                <h3>{service.title}</h3>
+                <a href='#contact1'>
+                  <button className='xizmat-btn'>{t('contact')}</button>
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>

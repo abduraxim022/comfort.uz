@@ -30,7 +30,7 @@
   "all_curtains": "Barcha turdagi pardalar",
   "all_carpets": "Barcha turdagi gilamlar",
   "all_blankets": "Barcha turdagi adyollar",
-  "see_our_results": "Qanday natija",
+  "see_our_results": "Qanday natijaga erishayotganimizni ko`ring",
   "projects_from_the_workplace": "Ish joyidan loyihalar",
   "how_it_works": "Ish jarayoni qanday ishlaydi",
   "call_us": "Qo'ng'iroq qiling",
@@ -65,5 +65,7 @@
   "washAnyCarpetAnswer": "Biz ko‘plab gilam turlarini yuvamiz, jumladan, jun, ipak va sintetik gilamlar. Ammo juda nozik yoki qadimiy gilamlar uchun biz maxsus tozalash usullarini qo‘llaymiz yoki sizga alternativ tozalash usullarini tavsiya qilamiz.",
   "location": "O'zbekiston, Toshkent Shahri",
   "description":"Biz Toshkentda 10 yildan beri professional gilam yuvish ishlarini olib boramiz, shuning uchun gilamlarni qanday toza va sifatli yuvishni bilamiz.",
-  "service":"Gilam yuvish xizmati"
+  "service":"Gilam yuvish xizmati",
+  "leave_your_information":"Ma'lumotlaringizni qoldiring",
+  "name":"Ismingiz"
 }

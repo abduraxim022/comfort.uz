@@ -65,5 +65,7 @@
   "pickupDeliveryAnswer": "Yes, we pick up and deliver your carpets for free at a convenient time for you. You only pay for the washing service.",
   "washAnyCarpet": "Can any carpet be washed?",
   "washAnyCarpetAnswer": "We wash many types of carpets, including wool, silk, and synthetic carpets. However, for very delicate or antique carpets, we apply special cleaning methods or recommend alternative cleaning methods.",
-  "location": "Uzbekistan, Tashkent City"
+  "location": "Uzbekistan, Tashkent City",
+  "leave_your_information":"Leave your information",
+  "name":"Name"
 }

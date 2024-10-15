@@ -53,7 +53,7 @@
     return (
       <div id="comment" className="comment-section">
         <div className="container">
-          <h1>{t("comments_title", "Fikrlar")}</h1>
+          <h1 data-aos= "flip-up">{t("comments")}</h1>
           <div className="slick-slider-wrapper">
             <Slider {...getSliderSettings()}>
               <div className="testimonial-card">

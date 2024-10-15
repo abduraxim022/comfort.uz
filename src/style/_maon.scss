@@ -1,155 +1,146 @@
-/* Main section styling */
 #main {
   padding: 60px 0;
-}
-
-.main-div {
-  font-family: "Unbounded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap; /* Allow wrapping on small screens */
-  position: relative; /* Added for absolute positioning of text */
-}
-
-/* Text content styles */
-.text-content {
-  flex: 1;
-  max-width: 500px;
-  position: relative; /* Allow positioning of text above background */
-  z-index: 2; /* Ensure text is above the background */
-}
-
-.text-content h1 {
-  font-size: 50px;
-  min-height: 0;
-  color: #007bff;
-  font-family: 'Unbounded', sans-serif;
-  font-weight: 500;
-}
-
-.text-content p {
-  font-size: 18px;
-  color: #007bff;
-  width: 400px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-/* Contact button styles */
-.main-button {
-  background-color: #007bff; /* Primary blue color */
-  color: #fff;
-  border: none;
-  padding: 12px 30px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-  font-weight: 500;
-  font-family: Unbounded;
-}
-
-.main-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-/* Image container */
-.image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-/* Main image */
-.main-img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
+  
   .main-div {
-    flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center align text content */
-    background-image: url("../images/manwithcarpet.png"); /* Set the background image */
-    background-size: cover; /* Cover the entire div */
-    background-position: center; /* Center the image */
-    height: 400px; /* Set a height for the background */
-    border-radius: 10px;
-    
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; // Allow wrapping on small screens
+    position: relative; // Added for absolute positioning of text
   }
 
   .text-content {
-    position: absolute; /* Absolute position to overlay on background */
-    top: 10px; /* Adjust vertical position */
-    left:250px;
-    transform: translateX(-50%); /* Center the text horizontally */
-    z-index: 2; /* Ensure text is above background */
-    text-align: left;
-    word-break: break-all;
-    
-    h1{
-      color: #ffffff;
+    flex: 1;
+    max-width: 500px;
+    position: relative; // Allow positioning of text above background
+    z-index: 2; // Ensure text is above the background
 
+    h1 {
+      font-size: 50px;
+      min-height: 0;
+      color: #00bfff;
+      font-family: 'Unbounded', sans-serif;
+      font-weight: 500;
     }
-    p{
-      color: #ffffff;
+
+    p {
+      font-size: 18px;
+      color: #00bfff;
+      width: 400px;
+      line-height: 1.6;
+      margin-bottom: 30px;
     }
   }
 
   .main-button {
-    margin-top: 20px; /* Adjust margin for button */
+    background-color: #007bff; // Primary blue color
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    font-family: Unbounded;
+
+    &:hover {
+      background-color: #0056b3; // Darker blue on hover
+    }
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .main-img {
-    display: none; /* Hide the main image */
-  }
-  .main-mini_img{
-  display: none;
-  }
-}
-
-/* Extra small mobile screens (max-width: 467px) */
-@media (max-width: 467px) {
-  .main-div {
-    height: 300px; /* Adjust height for smaller screens */
-    
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 
-  .text-content{
-    margin: 0px 0px 0px -35px;
-    word-wrap: break-word;
-
-    h1{
-      margin-left: -28px;
-      width: 100%;
-      font-size: 25px;
-      color: #ffffff;
-    
-    }
-    p{
-      margin-top: -15px;
-      font-size: 16px;
-      height: 100px;
-      margin-left: -15px;
+  // Responsive design
+  @media (max-width: 768px) {
+    .main-div {
+      flex-direction: column; // Stack items vertically
+      text-align: center; // Center align text content
+      background-image: url("../images/manwithcarpet.png"); // Set the background image
+      background-size: cover; // Cover the entire div
+      background-position: center; // Center the image
+      height: 400px; // Set a height for the background
+      border-radius: 10px;
     }
 
-    button{
-      margin-left: -20px;
-      
+    .text-content {
+      position: absolute; // Absolute position to overlay on background
+      top: 10px; // Adjust vertical position
+      left: 250px;
+      transform: translateX(-50%); // Center the text horizontally
+      z-index: 2; // Ensure text is above background
+      text-align: left;
+      word-break: break-all;
+
+      h1 {
+        color: #ffffff;
+      }
+
+      p {
+        color: #ffffff;
+      }
     }
 
+    .main-button {
+      margin-top: 20px; // Adjust margin for button
+    }
+
+    .main-img {
+      display: none; // Hide the main image
+    }
+
+    .main-mini_img {
+      display: none;
+    }
   }
-  .main-mini_img{
-    display: none;
+
+  // Extra small mobile screens (max-width: 467px)
+  @media (max-width: 467px) {
+    .main-div {
+      height: 300px; // Adjust height for smaller screens
+    }
+
+    .text-content {
+      margin: 0 -35px;
+      word-wrap: break-word;
+
+      h1 {
+        margin-left: -28px;
+        width: 100%;
+        font-size: 25px;
+        color: #ffffff;
+      }
+
+      p {
+        margin-top: -15px;
+        font-size: 16px;
+        height: 100px;
+        margin-left: -15px;
+      }
+
+      button {
+        margin-left: -20px;
+      }
+    }
+
+    .main-mini_img {
+      display: none;
+    }
   }
-  
- 
 }

@@ -1,83 +1,82 @@
 /* Base styles */
-.container {
-
+.container1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider {
-  position: relative;
-}
-
-/* Header styles */
-.slider-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.slider-text {
-  font-size: 35px;
-  color: #000929b3;
-  font-family: "Unbounded";
-  margin-bottom: 30px;
-  margin-left: 25px;
+  width: 100%;
+  max-width: 800px; /* Set a max width for the slider */
 }
 
 /* Slider image styles */
 .slider-img {
-  margin-left: 100px; /* Default left margin */
+   /* Default left margin */
+  height: 416px; /* Ensure the image height is explicitly set */
 }
 
-/* Media Queries for Responsive Design */
+.slider-img img {
+  height: 416px; /* Set image height */
+  object-fit: cover; /* Ensure images cover the set height */
+  width: 100%; /* Keep the images responsive */
+}
 
-/* Tablet and smaller screens */
-@media (max-width: 768px) {
-  .slider-text {
-    font-size: 28px; /* Smaller font size for tablets */
-    margin-left: 15px; /* Reduce left margin for better fit */
-    margin-bottom: 20px; /* Adjust bottom margin */
-  }
+/* Responsive design */
 
+/* iPhone SE (max-width: 320px) */
+@media (max-width: 320px) {
   .slider-img {
-    margin-left: 50px; /* Reduce left margin for smaller screens */
+    height: 300px; /* Reduce height for smaller screen */
+  }
+  .slider-img img {
+    height: 300px; /* Set image height for iPhone SE */
   }
 }
 
-/* Small mobile screens (max-width: 467px) */
+/* iPhone XR (max-width: 414px) */
+@media (max-width: 414px) {
+  .slider-img {
+    margin-left: 0; /* Remove margin for smaller screens */
+    height: 350px; /* Adjust height */
+  }
+  .slider-img img {
+    height: 350px; /* Set image height for iPhone XR */
+  }
+}
+
+/* iPhone 12 Pro & iPhone 13 Pro (max-width: 390px) */
+@media (max-width: 390px) {
+  .slider-img {
+    height: 375px; /* Adjust height for iPhone 12/13 Pro */
+  }
+  .slider-img img {
+    height: 375px; /* Set image height for iPhone 12/13 Pro */
+  }
+}
+
+/* General max-width 467px */
 @media (max-width: 467px) {
+  .slider {
+    max-width: 100%; /* Allow slider to take full width on small screens */
+  }
+
+  .slider-img {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Add some top margin */
+    width: 100%; /* Ensure the slider takes full width */
+    height: auto; /* Let height adjust based on aspect ratio */
+  }
+
+  .slider-img img {
+    height: auto; /* Allow height to be auto-adjusted */
+    max-width: 100%; /* Ensure images do not overflow */
+    object-fit: contain; /* Keep the image contained */
+  }
+
   .slider-text {
-    font-size: 22px; /* Further reduce font size for small devices */
-    margin-left: 10px; /* Smaller margin for mobile screens */
-    margin-bottom: 15px; /* Adjust bottom margin */
-    text-align: center; /* Center align text for smaller screens */
-  }
-
-  .slider-img {
-    margin-left: 0; /* Remove left margin on small screens */
-    margin-top: 20px; /* Add top margin to separate image from text */
-    width: 100%; /* Ensure the image scales to full width */
-    max-width: 90%; /* Limit the width to maintain proportions */
-  }
-}
-
-/* Additional mobile styles for iPhone XR and iPhone 12/13 */
-@media (max-width: 375px) { /* Specific styles for iPhone XR */
-  .slider-text {
-    font-size: 20px; /* Even smaller for iPhone XR */
-  }
-
-  .slider-img {
-    height: 200px; /* Adjust height for iPhone XR */
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) { /* Specific styles for iPhone 12 and 13 */
-  .slider-img {
-    height: 250px; /* Adjust height for iPhone 12 and 13 */
-  }
-}
-
-/* General mobile styles */
-@media (max-width: 480px) { 
-  .slider-img {
-    height: 200px; /* Adjust height for smaller devices */
+    font-size: 22px; /* Adjust font size for smaller screens */
+    text-align: center; /* Center text */
   }
 }
