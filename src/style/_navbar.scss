@@ -1,6 +1,6 @@
 /* Main Navbar container styling */
 .nb {
-  background-color: #f8f9fa; /* Light gray background */
+  background-color: #fff; /* Light gray background */
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -30,6 +30,7 @@
   height: 60px;
   width: 200px;
   padding-bottom: 7px;
+  margin-left: 10px;
 }
 
 /* Hamburger menu icon for mobile */
@@ -45,11 +46,12 @@
 
 /* Navbar links styling */
 .navbar-links {
+  padding-right: 25px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  height: 15px;
   font-size: 20px;
   font-weight: 500;
   color: #00000098;
@@ -61,8 +63,7 @@
   color: #000;
   font-weight: 500;
   padding: 10px 15px;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  position: relative;
+  
 }
 
 .nav-link:hover {
@@ -86,6 +87,7 @@
   border-radius: 20px;
   font-weight: 500;
   font-family: Unbounded;
+  width: 180px;
 }
 
 .contact-button:hover {
@@ -197,6 +199,11 @@
   .navbar-links.open {
     display: flex; /* Show links when dropdown is open */
     background-color: #e8eaec; /* Background color for open state */
+  }
+  .navbar-logo{
+    width: 140px;
+    height: 40px;
+    padding-left: 10px;
   }
 
   .nav-link {

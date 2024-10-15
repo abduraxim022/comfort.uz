@@ -23,7 +23,7 @@ export default function App() {
   }, []);
 
   return (
-    <div>
+    <div className="padding-left">
       <Navbar />
       <Maon />
       <Negabiz />
@@ -37,8 +37,5 @@ export default function App() {
       <Contact/>
       <Footer/>
     </div>
-    // <div data-aos="fade-up">
-    //   App with AOS animations
-    // </div>
   );
 }

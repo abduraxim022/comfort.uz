@@ -61,7 +61,7 @@
               <img width={"100px"} height={"100px"} src={nigora}/>
               <div>
                 <h2>Nigora</h2>
-                <p>{t("telegram_username", { username: "@nigora_dostva" })}</p>
+                <span>{t("telegram_username", { username: "@nigora_dostva" })}</span>
               </div>
                 </div>
                 <p>{t("nigora_feedback")}</p>
@@ -81,7 +81,7 @@
                 <img width={"100px"} height={"100px"} src={lobar} alt="Lobar" />
                 <div>
                   <h2>Lobar</h2>
-                  <span>{t("telegram_username", { username: "@prsens" })}</span>
+                  <span>{t("telegram_username", { username: "@hyot" })}</span>
                 </div>
               </div>
                 <p>{t("lobar_feedback")}</p>
@@ -91,7 +91,7 @@
                 <img width={"100px"} height={"100px"} src={barno} alt="Barno" />
                 <div>
                   <h2>Barno</h2>
-                  <span>{t("telegram_username", { username: "@prsens" })}</span>
+                  <span>{t("telegram_username", { username: "@barno" })}</span>
                 </div>
               </div>
                 <p>{t("barno_feedback")}</p>
@@ -101,7 +101,7 @@
                 <img width={"100px"} height={"100px"} src={bonu} alt="Bonu" />
                 <div>
                   <h2>Bonu</h2>
-                  <span>{t("telegram_username", { username: "@prsens" })}</span>
+                  <span>{t("telegram_username", { username: "@bonu_hamidova" })}</span>
                 </div>
               </div>
                 <p>{t("bonu_feedback")}</p>
@@ -111,7 +111,7 @@
                 <img width={"100px"} height={"100px"} src={samiya} alt="Samiya" />
                 <div>
                   <h2>Samiya</h2>
-                  <span>{t("telegram_username", { username: "@prsens" })}</span>
+                  <span>{t("telegram_username", { username: "@samiya_smm" })}</span>
                 </div>
               </div>
                 <p>{t("samiya_feedback")}</p>
