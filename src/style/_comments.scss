@@ -121,7 +121,7 @@ h1 {
 /* Mobile screens (max-width: 467px) */
 @media (max-width: 467px) {
   .testimonial-card {
-    width: 355px;
+    width: 355px !important;
     height: auto;
   }
 
