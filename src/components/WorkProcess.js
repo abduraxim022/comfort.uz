@@ -4,11 +4,9 @@ import temir from "../images/temir.png";
 import toza from "../images/toza.png";
 import tozalovchi from "../images/tozalovchi.png";
 import tozamen from "../images/tozaman.png";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
-
-
-export default function Ishjarayonioxirgi() {
+export default function WorkProcess() {
   const { t } = useTranslation();
   const images = [
     { src: temir, alt: "Temir", title: "Temir", className: "small-image" },
@@ -31,14 +29,13 @@ export default function Ishjarayonioxirgi() {
     <div className="container">
       <div>
         <div className="oxirgi-title" data-aos="flip-up">
-          <h1>{t('work_process_title')}</h1>
+          <h1>{t("work_process_title")}</h1>
         </div>
         <div className="ish-container_div">
           <div className="damas-container">
             <img src={damas} alt="Damas" className="damas-image" />
             <a href="#contact1">
-
-            <button  className="centered-button">{t('contact')}</button>
+              <button className="centered-button">{t("contact")}</button>
             </a>
           </div>
 
@@ -47,7 +44,7 @@ export default function Ishjarayonioxirgi() {
               <div className="image-container" key={index}>
                 <img src={image.src} alt={image.alt} className="image" />
                 <a href="#contact1">
-                <button className="centered-button">{t('contact')}  </button>
+                  <button className="centered-button">{t("contact")} </button>
                 </a>
               </div>
             ))}

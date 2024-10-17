@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from 'react-i18next';
 
-export default function Negabiz() {
+export default function Whyus() {
   const { t } = useTranslation();
 
   useEffect(() => {

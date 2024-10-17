@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("+998"); // Initialize with +998
   const [errors, setErrors] = useState({});
   const { t } = useTranslation();
 
@@ -39,7 +39,7 @@ export default function Contact() {
             position: "top-right",
           });
           setName("");
-          setPhone("");
+          setPhone("+998"); // Reset phone number to +998
         } else {
           toast.error("Xato yuz berdi, qayta urinib ko'ring.", {
             position: "top-right",
@@ -53,6 +53,16 @@ export default function Contact() {
     }
   };
 
+  // Handle phone input change to keep +998 intact
+  const handlePhoneChange = (e) => {
+    const input = e.target.value;
+    if (input.startsWith("+998")) {
+      setPhone(input); // Only allow updates if +998 is the prefix
+    } else if (input === "") {
+      setPhone("+998"); // Reset to +998 if the user clears the input
+    }
+  };
+
   return (
     <div id="contact1" className="container">
       <div className="contact-info">
@@ -60,29 +70,29 @@ export default function Contact() {
         <div className="form-div">
           <form onSubmit={handleSubmit} className="form-container">
             <h2>{t("leave_your_information")}</h2>
+            <div className="input-div">
+              <div className="form-group">
+                <input
+                  placeholder={t("name")}
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+                {errors.name && (
+                  <span className="error-message">{errors.name}</span>
+                )}
+              </div>
 
-            <div className="form-group">
-              <input
-                placeholder={t("name")}
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              {errors.name && (
-                <span className="error-message">{errors.name}</span>
-              )}
-            </div>
-
-            <div className="form-group">
-              <input
-                type="text"
-                placeholder="+998-90-123-45-67"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
-              {errors.phone && (
-                <span className="error-message">{errors.phone}</span>
-              )}
+              <div className="form-group">
+                <input className="in2"
+                  type="text"
+                  value={phone}
+                  onChange={handlePhoneChange} // Handle the phone input
+                />
+                {errors.phone && (
+                  <span className="error-message">{errors.phone}</span>
+                )}
+              </div>
             </div>
 
             <button type="submit" className="submit-btn">

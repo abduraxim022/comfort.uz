@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; 
 import { useTranslation } from 'react-i18next';
 
-export default function Ishjarayoni() {
+export default function Projectsworkplace() {
   const { t } = useTranslation();
 
   // Slick slider settings including breakpoints for responsiveness

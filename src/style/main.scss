@@ -1,11 +1,11 @@
 @import "navbar";
 @import "maon";
-@import "negabiz";
-@import "xizmat";
+@import "whyus";
+@import "servicetype";
 @import "sliderchange";
-@import "ishjarayoni";
-@import 'qanday';
-@import './ishjarayonioxirgi';
+@import "workprocess";
+@import 'howprocesswork';
+@import 'projectsworkplace';
 @import 'comments';
 @import 'faq';
 @import 'contact';
@@ -36,8 +36,3 @@ li{
   padding: 0px 15px;
 }
 
-@media (max-width:467px){
-  .container{
-    margin:0 auto;
-  }
-}

@@ -17,7 +17,7 @@ export default function Sliderchange() {
 
   return (
     <div>
-      <div className="container container1">
+      <div className="container container2">
         <div className="slider">
           <div data-aos="flip-up" className="slider-header">
             <h1 className="slider-text">{t("see_our_results")}</h1>

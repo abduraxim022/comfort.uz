@@ -19,6 +19,7 @@
 .damas-container {
   position: relative;
   width: 650px;
+  overflow: hidden;
   margin-right: 15px; /* Set the width of the damas image container */
 }
 
@@ -28,10 +29,14 @@
   transition: transform 0.3s ease; /* Smooth transition for zoom */
   border-radius: 10px;
 }
-
+.damas-image:hover{
+  // transform: scale(1.2); /* Zoom in on hover */
+  // filter: contrast(120%);  // 
+}
 .damas-container:hover .damas-image {
    /* Add zoom effect */
-  filter: brightness(1.1); /* Slight brightness increase on hover */
+   transform: scale(1.2);
+  // filter: contrast(120%); /* Slight brightness increase on hover */
 }
 
 /* Image Grid */

@@ -6,7 +6,7 @@ import parda from '../images/parda.png';
 import adyol from '../images/adyol.png';
 import { useTranslation } from 'react-i18next';
 
-export default function Xizmatturlari() {
+export default function Servicetype() {
   const { t } = useTranslation();
 
   // Services object to store information about each service

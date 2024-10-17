@@ -2,7 +2,7 @@ import React from "react";
 import { Bridge, Clear, Delivery, Document, Phone, Van, Warderobe } from "../svgformatter";
 import { useTranslation } from 'react-i18next';
 
-export default function Qandayishlayd() {
+export default function Howprocesswork() {
   const { t } = useTranslation(); // Access the translation function
 
   return (

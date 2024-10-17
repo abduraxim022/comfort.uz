@@ -38,6 +38,7 @@
     background: rgba(128, 128, 128, 0.199);
     margin-left: 18px;
     padding-left: 15px;
+    
   }
   
   h2 {
@@ -70,8 +71,19 @@
   }
 }
 
+.input-div{
+  height: 150px;
+  span{
+    margin-left: 18px;
+  }
+}
+
 .form-group {
   margin-top: 15px;
+
+  .in2{
+    margin-top: 20px;
+  }
 }
 
 .form-container {

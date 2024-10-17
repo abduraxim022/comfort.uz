@@ -11,17 +11,14 @@
     align-items: center;
     gap: 40px;
     flex-wrap: wrap; // Allow wrapping on small screens
-    position: relative; // Added for absolute positioning of text
   }
 
   .text-content {
     flex: 1;
-    max-width: 500px;
-    position: relative; // Allow positioning of text above background
-    z-index: 2; // Ensure text is above the background
+    max-width: 45 0px;
 
     h1 {
-      font-size: 50px;
+      font-size: 40px;
       min-height: 0;
       color: #00bfff;
       font-family: 'Unbounded', sans-serif;
@@ -34,6 +31,7 @@
       width: 400px;
       line-height: 1.6;
       margin-bottom: 30px;
+      text-wrap: wrap;
     }
   }
 
@@ -61,8 +59,7 @@
   }
 
   .main-img {
-    max-width: 100%;
-    width: 100%;
+    max-width: auto;
     height: auto;
     border-radius: 10px;
   }
@@ -81,25 +78,27 @@
     }
 
     .text-content {
-      position: absolute; // Absolute position to overlay on background
-      top: 10px; // Adjust vertical position
-      left: 250px;
-      transform: translateX(-50%); // Center the text horizontally
-      z-index: 2; // Ensure text is above background
-      text-align: left;
-      word-break: break-all;
+        width: 100%;
 
       h1 {
+        margin-right: 100px;
+        width: 600px;
+        font-size: 40px;
         color: #ffffff;
       }
 
       p {
+        text-align: left;
+        word-break: break-all;
+        width: 400px;
         color: #ffffff;
       }
     }
 
     .main-button {
-      margin-top: 20px; // Adjust margin for button
+    margin-top: 15px;
+    margin-right: 580px;
+     // Adjust margin for button
     }
 
     .main-img {
@@ -114,29 +113,30 @@
   // Extra small mobile screens (max-width: 467px)
   @media (max-width: 467px) {
     .main-div {
-      height: 300px; // Adjust height for smaller screens
-    }
+      height: 300px;
+        }
 
     .text-content {
-      margin: 0 -35px;
-      word-wrap: break-word;
+      width: 100%;
+      word-break: break-all;
+
+
 
       h1 {
-        margin-left: -28px;
+ 
         width: 100%;
         font-size: 25px;
         color: #ffffff;
       }
 
       p {
-        margin-top: -15px;
+        width: 100%;
         font-size: 16px;
         height: 100px;
-        margin-left: -15px;
       }
 
       button {
-        margin-left: -20px;
+        min-width: 200px;
       }
     }
 

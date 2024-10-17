@@ -8,7 +8,9 @@ export default function Footer() {
   return (
     <div className="container">
       <div className="footer-ul">
+        <a href="#main">
         <img src={logo} alt="logo" />
+        </a>
         <div data-aos ="fade-right" className="footer-div">
           <ul>
             <li>
