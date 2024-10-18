@@ -5,7 +5,6 @@ import "./style/main.scss";
 import Navbar from "./components/Navbar";
 import Maon from "./components/Maon";
 import Sliderchange from "./components/Sliderchange";
-import i18n from "./components/i18n";
 import Ishjarayonioxirgi from "./components/WorkProcess";
 import Comment from "./components/Comment";
 import Faq from "./components/Faq";
@@ -15,6 +14,7 @@ import Projectsworkplace from "./components/Projectsworkplace";
 import Servicetype from "./components/Servicetype";
 import Whyus from "./components/Whyus";
 import Howprocesswork from "./components/Howprocesswork";
+import i18n from "./i18n/i18n";
 
 
 
