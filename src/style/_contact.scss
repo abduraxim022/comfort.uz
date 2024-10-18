@@ -137,6 +137,11 @@
     height: auto;
     padding: 20px;
   }
+  .input-div{
+    span{
+      margin-left: 0px;
+    }
+  }
 }
 
 /* Responsive Design for Mobile (max-width: 467px) */
@@ -145,6 +150,12 @@
     height: auto;
     padding: 15px;
     flex-direction: column;
+  }
+
+  .input-div{
+    span{
+      margin-left: 0px;
+    }
   }
 
 

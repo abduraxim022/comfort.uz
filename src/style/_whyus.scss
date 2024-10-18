@@ -108,39 +108,39 @@
   }
 }
 
-/* Media Queries for Responsive Design */
 
-/* Tablet screens */
 @media (max-width: 768px) {
   .cards {
-    flex-direction: column; /* Change to column layout */
-    width: 100%; /* Full width for smaller screens */
-     /* Center items horizontally */
+    flex-direction: column; 
+    width: 100%; 
+     
   }
 
   .cards div {
-    
+    width: 100%;
     border: 1px solid #18f1b0b7;
-    width: 100%; /* Each card takes full width */
-    max-width: 768px; /* Maintain a max width for the cards */
-    margin-bottom: 20px; /* Add spacing between cards */
+    width: 100%; 
+    max-width: 768px; 
+    margin-bottom: 20px; 
   }
 
   .about-backimg {
-    width: 100%; /* Full width for smaller screens */
-    height: auto; /* Allow height to adjust based on content */
-    padding: 20px; /* Adjust padding for smaller screens */
+    width: 100%;
+    height: auto; 
+    padding: 20px; 
   }
 
   .about-backimg h2,
   .about-backimg p,
   .about-backimg a {
-    text-align: center; /* Center text for smaller screens */
-    max-width: 90%; /* Responsive max-width */
+    text-align: left;
+    word-break: break-all; 
+    word-wrap: break-word;
+    hyphens: auto;
   }
 }
 
-/* Small mobile screens (max-width: 467px) */
+
 @media (max-width: 467px) {
   .cards {
     flex-direction: column;
@@ -149,43 +149,43 @@
   }
 
   .cards div {
-    max-width: 100%; /* Full width for each card */
+    max-width: 100%; 
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #18f1b0b7; /* Responsive border */
+    border: 1px solid #18f1b0b7; 
   }
 
   .cards div h2 {
-    font-size: 20px; /* Smaller font for small screens */
+    width: 100%;
     line-height: 28px;
   }
 
   .cards div p {
     font-size: 14px;
     line-height: 20px;
-    width: 100%; /* Full width for paragraph */
+    width: 100%; 
   }
 
   .about-backimg {
-    width: 100%; /* Full width for image */
+    width: 100%; 
     padding: 15px;
     margin-top: 40px;
   }
 
   .about-backimg h2 {
-    font-size: 28px; /* Smaller font size */
+    font-size: 28px; 
     line-height: 36px;
   }
 
   .about-backimg p {
     font-size: 14px;
     line-height: 20px;
-    max-width: 100%; /* Full width text */
+    max-width: 100%; 
   }
 
   .about-backimg a {
-    font-size: 24px; /* Smaller font size */
+    font-size: 24px; 
   }
 
   .about-btn {

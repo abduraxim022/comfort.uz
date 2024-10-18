@@ -2,7 +2,6 @@
   display: flex;
 }
 
-/* Title Styling */
 .oxirgi-title {
   margin: 30px 0px;
 }
@@ -15,57 +14,52 @@
   font-weight: 700;
 }
 
-/* Damas Image Container */
 .damas-container {
   position: relative;
   width: 650px;
   overflow: hidden;
-  margin-right: 15px; /* Set the width of the damas image container */
+  margin-right: 15px;
 }
 
 .damas-image {
-  width: 100%; /* Ensure the image fills the container width */
+  width: 100%;
   height: 710px;
-  transition: transform 0.3s ease; /* Smooth transition for zoom */
+  transition: transform 0.3s ease;
   border-radius: 10px;
 }
-.damas-image:hover{
-  // transform: scale(1.2); /* Zoom in on hover */
-  // filter: contrast(120%);  // 
-}
-.damas-container:hover .damas-image {
-   /* Add zoom effect */
-   transform: scale(1.2);
-  // filter: contrast(120%); /* Slight brightness increase on hover */
+
+.damas-image:hover {
+  transform: scale(1.2);
 }
 
-/* Image Grid */
+.damas-container:hover .damas-image {
+  transform: scale(1.2);
+}
+
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns for other images */
-  gap: 10px; /* Space between images */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-/* Image Containers */
 .image-container {
   position: relative;
-  overflow: hidden; /* Hide overflow to create zoom effect */
+  overflow: hidden;
   border-radius: 10px;
   margin-right: 15px;
 }
 
 .image {
-  width: 100%; /* Make image fully responsive */
+  width: 100%;
   height: 350px;
-  transition: transform 0.3s ease; /* Smooth transition for zoom */
+  transition: transform 0.3s ease;
 }
 
 .image-container:hover .image {
-  transform: scale(1.2); /* Zoom in on hover */
+  transform: scale(1.2);
   filter: contrast(120%);
 }
 
-/* Centered Button */
 .centered-button {
   position: absolute;
   top: 50%;
@@ -77,69 +71,65 @@
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Smooth transition */
+  opacity: 0;
+  transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
 .image-container:hover .centered-button,
 .damas-container:hover .centered-button {
-  opacity: 1; /* Show button on hover */
+  opacity: 1;
 }
 
 .centered-button:hover {
-  background-color: rgba(0, 123, 255, 1); /* Full opacity on button hover */
+  background-color: rgba(0, 123, 255, 1);
 }
 
-/* Media Queries for Responsive Design */
-
-/* Tablet and smaller screens */
 @media (max-width: 768px) {
   .ish-container_div {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align on smaller screens */
+    flex-direction: column;
+    align-items: center;
   }
 
   .damas-container {
-    width: 100%; /* Make the container full width */
-    margin-bottom: 20px; /* Add some space below the damas container */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .image-grid {
-    grid-template-columns: 1fr; /* One column layout for smaller screens */
-    gap: 15px; /* Increase gap for better spacing */
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .image {
-    height: auto; /* Let the height adjust automatically */
+    height: auto;
   }
 
   .damas-image {
-    height: auto; /* Let height adjust based on image content */
+    height: auto;
   }
 }
 
-/* Mobile Screens (max-width: 467px) */
 @media (max-width: 467px) {
   .oxirgi-title h1 {
-    font-size: 28px; /* Adjust title size for mobile */
+    font-size: 28px;
   }
 
   .damas-container {
-    width: 100%; /* Full width for mobile */
+    width: 100%;
   }
 
   .image-grid {
-    grid-template-columns: 1fr; /* Single column for images on mobile */
+    grid-template-columns: 1fr;
   }
 
   .damas-image,
   .image {
-    height: auto; /* Adjust height based on content */
+    height: auto;
   }
 
   .centered-button {
-    font-size: 14px; /* Adjust button size for mobile */
-    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }

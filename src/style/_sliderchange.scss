@@ -1,4 +1,3 @@
-/* Base styles */
 .container2 {
   width: 100%;
   display: flex;
@@ -8,143 +7,133 @@
 
 .slider {
   width: 100%;
-  max-width: 800px; /* Set a max width for the slider */
+  max-width: 800px;
 }
 
-/* Slider image styles */
 .slider-img {
-   /* Default left margin */
-  height: 416px; /* Ensure the image height is explicitly set */
+  height: 416px;
 }
 
 .slider-img img {
-  height: 416px; /* Set image height */
-  object-fit: cover; /* Ensure images cover the set height */
-  width: 100%; /* Keep the images responsive */
+  height: 416px;
+  object-fit: cover;
+  width: 100%;
 }
-.slider-header{
+
+.slider-header {
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-
-
-  h1{
-    font-size: 40px;
-    color: #000929b3;
-   
-    font-family: 'Unbounded' sans-serif;
-    font-weight: 500;
-    margin-bottom: 30px
-  }
-  
 }
-/* Responsive design */
 
-/* iPhone SE (max-width: 320px) */
+.slider-header h1 {
+  font-size: 40px;
+  color: #000929b3;
+  font-family: 'Unbounded' sans-serif;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 320px) {
   .slider-img {
-    height: 300px; /* Reduce height for smaller screen */
+    height: 300px;
   }
   .slider-img img {
-    height: 300px; /* Set image height for iPhone SE */
+    height: 300px;
   }
 }
 
-/* iPhone XR (max-width: 414px) */
 @media (max-width: 414px) {
   .slider-img {
-    margin-left: 0; /* Remove margin for smaller screens */
-    height: 350px; /* Adjust height */
+    margin-left: 0;
+    height: 350px;
   }
   .slider-img img {
-    height: 350px; /* Set image height for iPhone XR */
+    height: 350px;
   }
 }
 
-/* iPhone 12 Pro & iPhone 13 Pro (max-width: 390px) */
 @media (max-width: 390px) {
   .slider-img {
-    height: 375px; /* Adjust height for iPhone 12/13 Pro */
+    height: 375px;
   }
   .slider-img img {
-    height: 375px; /* Set image height for iPhone 12/13 Pro */
+    height: 375px;
   }
 }
 
-/* General max-width 467px */
 @media (max-width: 467px) {
   .slider {
-    max-width: 100%; /* Allow slider to take full width on small screens */
+    max-width: 100%;
   }
 
   .slider-img {
-    margin-left: 0; /* Remove left margin */
-    margin-top: 20px; /* Add some top margin */
-    width: 100%; /* Ensure the slider takes full width */
-    height: auto; /* Let height adjust based on aspect ratio */
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
   }
 
   .slider-img img {
-    height: auto; /* Allow height to be auto-adjusted */
-    max-width: 100%; /* Ensure images do not overflow */
-    object-fit: contain; /* Keep the image contained */
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
   }
 
   .slider-text {
     word-break: break-all;
-    font-size: 22px; /* Adjust font size for smaller screens */
-    text-align: center; /* Center text */
+    font-size: 22px;
+    text-align: center;
   }
 }
-/* Tablet screens (max-width: 1024px) */
+
 @media (max-width: 1024px) {
   .slider {
-    max-width: 90%; /* Allow the slider to take up 90% of the screen width */
+    max-width: 90%;
   }
 
   .slider-img {
-    height: 400px; /* Adjust height for larger tablets */
+    height: 400px;
   }
 
   .slider-img img {
-    height: 400px; /* Set image height */
-    object-fit: cover; /* Ensure the image covers the set dimensions */
+    height: 400px;
+    object-fit: cover;
     width: 100%;
   }
 
   .slider-header h1 {
-    font-size: 36px; /* Slightly reduce the header font size */
-    margin-bottom: 25px; /* Adjust bottom margin */
+    font-size: 36px;
+    margin-bottom: 25px;
   }
 
   .slider-text {
-    font-size: 24px; /* Adjust font size for tablets */
+    font-size: 24px;
     text-align: center;
-    padding: 10px 20px; /* Add some padding for text */
+    padding: 10px 20px;
   }
 }
 
-/* Tablet screens (max-width: 768px) */
 @media (max-width: 768px) {
   .slider {
-    max-width: 100%; /* Slider takes full width on smaller tablets */
+    max-width: 100%;
   }
 
   .slider-img {
-    height: 350px; /* Reduce height for smaller tablets */
+    height: 350px;
   }
 
   .slider-img img {
-    height: 350px; /* Adjust image height */
+    height: 350px;
   }
 
   .slider-header h1 {
-    font-size: 32px; /* Further reduce font size for smaller tablets */
-    margin-bottom: 20px; /* Adjust spacing */
+    font-size: 32px;
+    margin-bottom: 20px;
   }
 
   .slider-text {
-    font-size: 20px; /* Reduce font size */
-    text-align: center; /* Center align text */
+    font-size: 20px;
+    text-align: center;
   }
 }
