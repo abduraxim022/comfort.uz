@@ -30,10 +30,15 @@
   word-break: break-all;
   overflow-x: hidden;
   overflow-y: hidden;
-  
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+
 }
 
 li{
   list-style-type: none;
 }
+
+
 

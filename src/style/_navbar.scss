@@ -7,7 +7,6 @@
   z-index: 1000;
   width: 100%;
   height: 110px;
-  /* Ensure it stays on top of other content */
 }
 
 /* Navbar logo */
@@ -25,31 +24,33 @@
   cursor: pointer;
 }
 
+/* Navbar container */
 .container1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* Navbar links and layout */
 .links-nav {
-  width: 800px; /* Adjusted width for navbar links */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-/* Navbar links styling */
 .navbar-links {
-  padding-right: 25px;
-  width: 600px;
   font-size: 20px;
   font-weight: 500;
+  padding-top: 10px;
+  margin-left: 38px;
   color: #00000098;
-  margin-left: 100px;
 }
 
 .nav-link {
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  padding: 10px 15px;
+  padding: 0px 15px;
 }
 
 .nav-link:hover {
@@ -80,19 +81,13 @@
   background-color: #0056b3;
 }
 
-/* Navbar right (select language + contact button) */
+/* Navbar right section */
 .navbar-right {
   display: flex;
   align-items: center;
 }
 
-.navbar-right .ant-select {
-  font-size: 14px;
-  margin-left: 10px;
-  min-width: 120px;
-}
-
-/* Responsive Design */
+/* Responsive styles */
 
 /* Mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
@@ -100,28 +95,24 @@
     width: 100%;
   }
 
-  .nb {
-    width: 100%;
-  }
-
   .navbar-links {
-    display: none; /* Hide navbar links initially */
+    display: none;
     flex-direction: column;
     width: 100%;
     gap: 10px;
     text-align: center;
     background-color: #f8f9fa;
     position: absolute;
-    top: 60px; /* Adjust based on navbar height */
+    top: 60px;
     left: 0;
     right: 0;
     z-index: 999;
   }
 
   .navbar-links.open {
-    display: flex; /* Show the dropdown menu */
+    display: flex;
     background-color: #e8eaec;
-    height: auto; /* Auto height for flexible content */
+    height: auto;
   }
 
   .nav-link {
@@ -130,69 +121,49 @@
   }
 
   .menu-icon {
-    margin-top: 7px;
     display: block;
-     /* Show hamburger menu on mobile */
   }
 
   .navbar-right {
     margin-top: 10px;
     width: 100%;
-  
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
   }
 
   .contact-button {
-    width: 100%; /* Full width for mobile */
-    display: none; /* Hidden for mobile, shown only on larger screens */
-  }
-
-  .navbar-right .ant-select {
     width: 100%;
-    margin-top: 10px;
+    display: none;
   }
 }
 
 /* Small mobile screens (max-width: 467px) */
 @media (max-width: 467px) {
-  .navbar-links {
-    display: none; /* Hide links initially */
-    flex-direction: column;
-    gap: 5px; /* Smaller gap */
-  }
-
-  .navbar-links.open {
-    display: flex; /* Show links when dropdown is open */
-    background-color: #e8eaec; /* Background color for open state */
-  }
-
   .navbar-logo {
     width: 140px;
     height: 40px;
   }
 
   .nav-link {
-    font-size: 16px; /* Font size adjustment */
-    padding: 10px 0; /* Adjust padding for links */
+    font-size: 16px;
+    padding: 10px 0;
   }
 
   .menu-icon {
     font-size: 24px;
-    margin-left: 25px; /* Smaller hamburger icon */
+    margin-left: 25px;
   }
 
   .navbar-right {
     margin-top: 5px;
-    margin-left: 20px; /* Reduced top margin */
-    /* Adjust gap between items */
+    gap: 0;
+    padding-left: 10px;
   }
 
   .contact-button {
-    width: 100%; /* Full width for mobile */
-    display: none; /* Hidden for mobile, shown only on larger screens */
-  }
-
-  .navbar-right .ant-select {
-    width: 100%; /* Full width select */
+    width: 100%;
+    display: none;
   }
 }
 
@@ -201,20 +172,17 @@
   .navbar-links {
     margin-left: 50px;
     gap: 15px;
+    display: none;
   }
 
   .contact-button {
     padding: 8px 16px;
   }
-
-  .navbar-right .ant-select {
-    margin-left: 8px;
-  }
 }
 
 /* Sidebar styling */
 .p-sidebar {
-  background-color: #f8f9fa; /* Light background for sidebar */
+  background-color: #f8f9fa;
   padding: 20px 10px;
   width: 260px;
 }
@@ -230,11 +198,11 @@
 
 .p-sidebar .nav-link:hover {
   color: #007bff;
-  background-color: #e8eaec; /* Hover effect */
+  background-color: #e8eaec;
   border-radius: 5px;
 }
 
-/* Contact button at the bottom of the sidebar */
+/* Contact button in the sidebar */
 .p-sidebar-footer {
   position: absolute;
   bottom: 20px;
@@ -258,9 +226,9 @@
   background-color: #0056b3;
 }
 
-/* Ensure sidebar is responsive */
+/* Responsive sidebar */
 @media (max-width: 768px) {
   .p-sidebar {
-   width: 70%; /* Full-width on smaller screens */
+    width: 70%;
   }
 }

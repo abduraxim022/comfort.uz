@@ -1,8 +1,7 @@
 .video-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
-  gap: 35px;
-  margin-left: 100px;
+  
 
   @media (max-width: 1200px) {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
@@ -36,10 +35,14 @@
 
 /* Make video frame responsive */
 .video-frame {
-  width: 330px; /* Make it responsive to parent width */
+  object-fit: cover;
+  width: 330px;
+  height: 580px; /* Make it responsive to parent width */
   border-radius: 5px;
-  max-width: 209px; /* Maintain the original size */
+  max-width: 330px; 
+  padding: 45px;/* Maintain the original size */
 }
+
 
 
 /* Media Queries for Responsive Design */
@@ -48,7 +51,8 @@
 @media (max-width: 467px) {
   .video-grid {
     grid-template-columns: 1fr; /* 1 column layout */
-    gap: 20px; /* Reduce gap between videos */
+    gap: 20px;
+   /* Reduce gap between videos */
   }
 
   .ish-title {
@@ -58,6 +62,7 @@
 
   .video-frame {
     max-width: 100%; /* Full width for the video frame */
-    border-radius: 5px; /* Keep border-radius */
+    border-radius: 5px;
+    padding: 25px; /* Keep border-radius */
   }
 }

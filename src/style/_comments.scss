@@ -11,7 +11,7 @@
 }
 
 /* Heading Styling */
-h1 {
+.comenth1 {
   text-align: center;
   font-size: 36px;
   color: #333;
@@ -93,7 +93,9 @@ h1 {
 /* Tablet screens (max-width: 768px) */
 @media (max-width: 768px) {
   .testimonial-card {
+    width: 350px !important;
     padding: 15px;
+ 
   }
 
   h1 {
@@ -121,8 +123,8 @@ h1 {
 /* Mobile screens (max-width: 467px) */
 @media (max-width: 467px) {
   .testimonial-card {
-    width: 355px !important;
-    height: auto;
+  width: 100% !important;
+    height: 250px;
   }
 
   h1 {

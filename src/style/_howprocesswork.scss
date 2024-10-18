@@ -85,38 +85,44 @@
   }
 
   .qanday-card p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
+    font-size: 0.9rem; 
   }
 
   .btn-order {
-    padding: 0.6rem 1.2rem; /* Adjust button padding */
-    font-size: 0.9rem; /* Adjust button font size */
+    padding: 0.6rem 1.2rem; 
+    font-size: 0.9rem;
   }
 }
 
-/* Mobile Screens (max-width: 467px) */
+
 @media (max-width: 467px) {
   .qanday-section h1 {
-    font-size: 28px; /* Further reduce title font size */
-    margin-bottom: 1rem; /* Adjust bottom margin */
+    text-align: left;
+    font-size: 28px; 
+    margin-bottom: 1rem; 
   }
 
   .qanday-card {
-    width: 100%; /* Full width for mobile screens */
-    padding: 1rem; /* Adjust padding */
-    margin-bottom: 20px; /* Add space between cards */
+    width: 100%; 
+    padding: 1rem; 
   }
 
   .qanday-card h4 {
-    font-size: 1rem; /* Adjust heading font size */
+    font-size: 1rem;
   }
 
   .qanday-card p {
-    font-size: 0.85rem; /* Adjust paragraph font size */
+    font-size: 0.85rem; 
+    text-align: left;
   }
 
   .btn-order {
-    padding: 0.5rem 1rem; /* Adjust button padding */
-    font-size: 0.85rem; /* Adjust button font size */
+    padding: 0.5rem 1rem; 
+    font-size: 0.85rem;
+  }
+
+  .qanday-rows{
+    justify-content: flex-start;
+    word-break: keep-all;
   }
 }

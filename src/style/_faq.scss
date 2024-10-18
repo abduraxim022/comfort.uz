@@ -1,4 +1,6 @@
 .faq-div {
+  text-align: left;
+  word-break: keep-all;
   display: flex;
   flex-direction: row; /* Default direction for larger screens */
 
@@ -25,7 +27,7 @@
   @media (max-width: 1024px) {
     flex-direction: column; /* Stack content vertically on tablet */
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 0 20px;
   }
 

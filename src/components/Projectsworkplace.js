@@ -32,13 +32,13 @@ export default function Projectsworkplace() {
         {
           breakpoint: 900, // For screens smaller than 900px (tablet)
           settings: {
-            slidesToShow: 3, // Show 1 video per slide
+            slidesToShow: 2, // Show 1 video per slide
           },
         },
         {
           breakpoint: 600, // For screens smaller than 600px (mobile)
           settings: {
-            slidesToShow: 2, // Show 1 video per slide
+            slidesToShow: 1, // Show 1 video per slide
           },
         },
         {

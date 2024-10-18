@@ -47,9 +47,9 @@
             },
           },
           {
-            breakpoint: 500,
+            breakpoint: 768,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1,
             },
           },
@@ -62,7 +62,7 @@
     return (
       <div id="comment" className="comment-section">
         <div className="container">
-          <h1 data-aos= "flip-up">{t("comments")}</h1>
+          <h1 className="comenth1" data-aos= "flip-up">{t("comments")}</h1>
           <div className="slick-slider-wrapper">
             <Slider {...getSliderSettings()}>
               <div className="testimonial-card">

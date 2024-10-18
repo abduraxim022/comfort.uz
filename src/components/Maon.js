@@ -10,7 +10,7 @@ export default function Maon() {
     <div id="main">
       <div className="container">
         <div className="main-div">
-          <div className="text-content">
+          <div className="text-content1">
             <h1>{t("service")}</h1>
             <p>{t("description")}</p>
             <div className="main-mini_img">

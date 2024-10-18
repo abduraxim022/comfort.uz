@@ -44,7 +44,7 @@
   h2 {
     color: #242825;
     font-family: Unbounded;
-    font-size: 32px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
@@ -102,10 +102,7 @@
     margin-top: 30px;
   }
 
-  .Toastify__toast {
-    max-width: 90%; /* Set to 90% of the viewport width */
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
+
 
   .contact-img {
     display: none;
@@ -150,10 +147,9 @@
     flex-direction: column;
   }
 
-  .Toastify__toast {
-    max-width: 100%; /* Make toast full-width */
-    font-size: 12px; /* Further reduce font size */
-  }
+
+
+
 
   .contact-img {
     display: none;
@@ -177,7 +173,8 @@
 
     h2 {
       font-size: 24px;
-      text-align: center;
+      text-align: left;
+      word-break: keep-all;
     }
   }
 
@@ -185,11 +182,7 @@
     width: 100%;
     padding: 15px;
   }
+
 }
 
-
-/* Base styles for toast notifications */
-.Toastify__toast {
-  max-width: 400px; /* Set a default max width */
-}
 

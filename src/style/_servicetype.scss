@@ -2,16 +2,16 @@
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   font-size: 16px;
   border-radius: 20px;
   font-weight: 500;
   font-family: Unbounded;
+  width: 190px;
+  height: 50px;
+  margin-top: 15px;
 }
 
-/* General section padding */
 .ximat {
   padding: 60px 0;
   width: 100%;
@@ -24,124 +24,126 @@
   margin-bottom: 16px;
 }
 
-/* Title styling */
+
 .ximat h1 {
   font-size: 36px;
   color: #333;
   margin-bottom: 40px;
 }
 
-/* Grid layout for the cards */
+
 .xizmat-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2-column layout */
-  gap: 25px; /* Space between the cards */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px;
   justify-items: center;
   align-items: start;
 }
 
-/* Individual card styling */
+
 .xizmat-cards div {
   background: #f3f6f6;
   width: 460px;
-  height: 450px;
+  height: 440px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
-/* Card image styling */
+
 .xizmat-cards img {
   width: 100%;
   margin-bottom: 20px;
 }
 
-/* Card heading */
+
 .xizmat-cards h3 {
-  font-size: 30px; /* Adjusted font size */
+  font-size: 30px; 
   color: #2c788d;
+  width: 400px;
   font-family: Unbounded;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 30px;
+  margin: 0 auto;
   text-align: center;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-/* Button hover effect */
 .xizmat-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
-/* Media Queries for Responsive Design */
 
-/* Tablet and smaller screens */
 @media (max-width: 768px) {
   .ximat {
-    padding: 40px 0; /* Reduced padding */
-    font-size: 36px; /* Adjust font size */
-    line-height: 48px; /* Adjust line height */
+    font-size: 36px; 
+    line-height: 48px;
   }
 
   .xizmat-cards {
-    grid-template-columns: 1fr; /* 1-column layout for smaller screens */
-    gap: 20px; /* Reduced gap */
+    width: 100%;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    
   }
 
   .xizmat-cards div {
-    width: 100%; /* Full width for cards */
-    height: auto; /* Allow height to adjust based on content */
-    padding: 20px; /* Add padding inside cards */
+    width: 100%;
+    height: auto; 
   }
 
   .xizmat-cards h3 {
-    font-size: 24px; /* Adjust heading font size */
-    margin-bottom: 20px; /* Adjust margin */
+    font-size: 24px; 
+    margin-bottom: 20px; 
   }
 
   .xizmat-btn {
-    padding: 10px 20px; /* Adjust padding */
-    font-size: 14px; /* Adjust button font size */
+    padding: 10px 20px; 
+    font-size: 14px; 
+    margin-bottom: 20px;
   }
 }
 
-/* Small mobile screens (max-width: 467px) */
+
 @media (max-width: 467px) {
   .ximat {
-    padding: 30px 0; /* Further reduce padding */
-    font-size: 28px; /* Smaller font size for very small screens */
+    width: 100%;
+    font-size: 28px; 
     line-height: 36px;
-    text-align: center; /* Center align the heading */
   }
 
   .ximat h1 {
-    font-size: 24px; /* Smaller title font size */
-    margin-bottom: 30px; /* Adjust bottom margin */
+    font-size: 24px; 
+    margin-bottom: 30px; 
   }
 
   .xizmat-cards {
-    grid-template-columns: 1fr; /* Maintain 1-column layout */
-    gap: 15px; /* Reduce gap between cards */
+    grid-template-columns: 1fr; 
+    gap: 15px; 
   }
 
   .xizmat-cards div {
-    width: 100%; /* Full width for cards */
-    height: auto; /* Auto height to fit content */
-    padding: 15px; /* Smaller padding for better layout */
-    box-shadow: none; /* Remove box-shadow for cleaner look */
+    width: 374px;
+    height: auto; 
+    box-shadow: none; 
   }
 
   .xizmat-cards h3 {
-    font-size: 20px; /* Smaller heading font */
-    margin-bottom: 15px; /* Adjust margin */
+    font-size: 20px; 
+    margin-bottom: 15px; 
   }
 
   .xizmat-btn {
-    padding: 8px 16px; /* Smaller padding for buttons */
-    font-size: 12px; /* Adjust font size */
+    padding: 8px 16px; 
+    font-size: 12px; 
+    max-width: 150px;
+    height: 35px;
   }
 
   .xizmat-cards img {
-    margin-bottom: 15px; /* Adjust spacing between image and content */
+    margin-bottom: 15px; 
   }
 }

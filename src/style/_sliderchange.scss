@@ -22,7 +22,22 @@
   object-fit: cover; /* Ensure images cover the set height */
   width: 100%; /* Keep the images responsive */
 }
+.slider-header{
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 
+
+  h1{
+    font-size: 40px;
+    color: #000929b3;
+   
+    font-family: 'Unbounded' sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px
+  }
+  
+}
 /* Responsive design */
 
 /* iPhone SE (max-width: 320px) */
@@ -76,7 +91,60 @@
   }
 
   .slider-text {
+    word-break: break-all;
     font-size: 22px; /* Adjust font size for smaller screens */
     text-align: center; /* Center text */
+  }
+}
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .slider {
+    max-width: 90%; /* Allow the slider to take up 90% of the screen width */
+  }
+
+  .slider-img {
+    height: 400px; /* Adjust height for larger tablets */
+  }
+
+  .slider-img img {
+    height: 400px; /* Set image height */
+    object-fit: cover; /* Ensure the image covers the set dimensions */
+    width: 100%;
+  }
+
+  .slider-header h1 {
+    font-size: 36px; /* Slightly reduce the header font size */
+    margin-bottom: 25px; /* Adjust bottom margin */
+  }
+
+  .slider-text {
+    font-size: 24px; /* Adjust font size for tablets */
+    text-align: center;
+    padding: 10px 20px; /* Add some padding for text */
+  }
+}
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .slider {
+    max-width: 100%; /* Slider takes full width on smaller tablets */
+  }
+
+  .slider-img {
+    height: 350px; /* Reduce height for smaller tablets */
+  }
+
+  .slider-img img {
+    height: 350px; /* Adjust image height */
+  }
+
+  .slider-header h1 {
+    font-size: 32px; /* Further reduce font size for smaller tablets */
+    margin-bottom: 20px; /* Adjust spacing */
+  }
+
+  .slider-text {
+    font-size: 20px; /* Reduce font size */
+    text-align: center; /* Center align text */
   }
 }
